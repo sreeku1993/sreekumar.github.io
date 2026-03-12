@@ -15,9 +15,11 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
 
 <link rel="stylesheet" href="style.css">
 
+
+
 </head>
 
-<body background="assets\bg.png">
+<body>
 
 <!-- HERO -->
 
@@ -54,7 +56,7 @@ Experienced in designing and deploying AI solutions including career recommendat
 <div class="text-center mt-4">
 
 <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
-<a href="assets/cv.pdf" class="btn btn-outline-light btn-lg">Download CV</a>
+<a href="assets/cv.pdf" download class="btn btn-outline-light btn-lg">Download CV</a>
 </div>
 
 </div>
@@ -480,6 +482,38 @@ Try Demo
 AOS.init();
 </script>
 
+<!-- FLOATING CHAT BUTTON -->
+
+<div id="chat-button" onclick="toggleChat()">💬</div>
+
+<div id="chat-window">
+
+<div class="chat-header">
+AI Assistant
+<span onclick="toggleChat()">✖</span>
+</div>
+
+<iframe
+src="https://sreekumar93-sreebot.hf.space"
+></iframe>
+
+</div>
+
+<script>
+
+function toggleChat(){
+
+const chat = document.getElementById("chat-window");
+
+if(chat.style.display === "none" || chat.style.display === ""){
+chat.style.display = "block";
+}else{
+chat.style.display = "none";
+}
+
+}
+
+</script>
 </body>
 
 </html>
