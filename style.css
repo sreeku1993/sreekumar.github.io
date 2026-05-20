@@ -188,3 +188,15 @@ justify-content:space-between;
 align-items:center;
 font-size:14px;
 }
+.chat-hint{
+margin-top:15px;
+font-size:15px;
+opacity:0.85;
+animation:fadePulse 2s infinite;
+}
+
+@keyframes fadePulse{
+0%{opacity:0.5;}
+50%{opacity:1;}
+100%{opacity:0.5;}
+}
