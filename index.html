@@ -5,135 +5,234 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sreekumar Kallingapuram Suresh: Senior AI Engineer building agentic AI systems, RAG pipelines and LLM applications.">
+<meta name="theme-color" content="#060914">
 
-<title>Sreekumar Kallingapuram Suresh | AI Engineer</title>
+<title>Sreekumar Kallingapuram Suresh | Senior AI Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-
-
+<link rel="stylesheet" href="style.css?v=20261109">
 
 </head>
 
 <body>
 
+<canvas id="net" aria-hidden="true"></canvas>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg fixed-top site-nav" id="nav">
+<div class="container">
+
+<a class="navbar-brand" href="#top"><span class="monogram">SK</span><span class="brand-name">Sreekumar</span></a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+<i class="bi bi-list"></i>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-gradient btn-sm px-3" href="assets/cv.pdf" download>Download CV</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="top">
+<div class="container">
+<div class="row align-items-center g-5">
+
+<div class="col-lg-7 hero-copy" data-aos="fade-right">
+
+<span class="hero-badge"><span class="pulse-dot"></span> Senior AI Engineer · Thrissur, India</span>
 
 <h1>Sreekumar Kallingapuram Suresh</h1>
 
-
 <p class="lead">
-AI Engineer | Agentic AI | RAG | LangGraph | LLM Applications
+Senior AI Engineer | Agentic AI | RAG | LangGraph | LLM Applications
 </p>
 
-<p>
+<p class="typed-line">I build <span id="typed"></span><span class="caret"></span></p>
+
+<p class="hero-text">
 Building production-grade AI systems using Agentic AI,
 LangGraph, MCP, RAG, and modern LLM frameworks across
 healthcare, legal, and career intelligence domains.
 </p>
-<p class="chat-hint">
+
+<div class="hero-cta">
+<a href="#projects" class="btn btn-gradient btn-lg px-4">View Projects</a>
+<a href="assets/cv.pdf" download class="btn btn-outline-light btn-lg px-4">Download CV</a>
+</div>
+
+<p class="chat-hint" onclick="toggleChat()">
 💬 Ask my AI assistant about my projects, skills, or experience
 </p>
+
+</div>
+
+<div class="col-lg-5" data-aos="zoom-in" data-aos-delay="150">
+<div class="hero-art">
+<svg class="hero-svg" viewBox="0 0 480 480" role="img" aria-label="Illustration: an AI core connected to RAG, agents, MCP, LLMs, vector databases and evaluation">
+<defs>
+<radialGradient id="coreGlow"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".55"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+<linearGradient id="coreFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".55" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+</defs>
+<circle class="glow" cx="240" cy="240" r="170" fill="url(#coreGlow)"/>
+<circle class="ring-a" cx="240" cy="240" r="108" fill="none" stroke="#a78bfa" stroke-opacity=".35" stroke-dasharray="3 9"/>
+<circle cx="240" cy="240" r="168" fill="none" stroke="#fff" stroke-opacity=".08"/>
+<circle class="ring-c" cx="240" cy="240" r="218" fill="none" stroke="#22d3ee" stroke-opacity=".2" stroke-dasharray="2 12"/>
+<circle class="spark" cx="60" cy="90" r="2" fill="#fff"/><circle class="spark" cx="430" cy="70" r="2.5" fill="#fff"/><circle class="spark" cx="452" cy="300" r="2" fill="#fff"/><circle class="spark" cx="36" cy="340" r="2.5" fill="#fff"/><circle class="spark" cx="120" cy="450" r="2" fill="#fff"/><circle class="spark" cx="380" cy="440" r="2" fill="#fff"/><circle class="spark" cx="250" cy="18" r="2" fill="#fff"/><circle class="spark" cx="250" cy="470" r="2" fill="#fff"/>
+<g class="orbit">
+<line class="link" x1="240" y1="240" x2="240.0" y2="72.0" stroke="#22d3ee" stroke-opacity=".55" stroke-width="1.4"/><line class="link" x1="240" y1="240" x2="385.5" y2="156.0" stroke="#a78bfa" stroke-opacity=".55" stroke-width="1.4"/><line class="link" x1="240" y1="240" x2="385.5" y2="324.0" stroke="#60a5fa" stroke-opacity=".55" stroke-width="1.4"/><line class="link" x1="240" y1="240" x2="240.0" y2="408.0" stroke="#f472b6" stroke-opacity=".55" stroke-width="1.4"/><line class="link" x1="240" y1="240" x2="94.5" y2="324.0" stroke="#34d399" stroke-opacity=".55" stroke-width="1.4"/><line class="link" x1="240" y1="240" x2="94.5" y2="156.0" stroke="#fbbf24" stroke-opacity=".55" stroke-width="1.4"/>
+<g transform="translate(240.0 72.0)"><g class="node-inner"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#0b1226" stroke="#22d3ee" stroke-width="1.5"/><circle cx="-28" cy="0" r="4" fill="#22d3ee"/><text x="8" y="4.5" text-anchor="middle" fill="#e8ecf6" font-size="13" font-family="Inter,Segoe UI,sans-serif" font-weight="600">RAG</text></g></g><g transform="translate(385.5 156.0)"><g class="node-inner"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#0b1226" stroke="#a78bfa" stroke-width="1.5"/><circle cx="-28" cy="0" r="4" fill="#a78bfa"/><text x="8" y="4.5" text-anchor="middle" fill="#e8ecf6" font-size="13" font-family="Inter,Segoe UI,sans-serif" font-weight="600">Agents</text></g></g><g transform="translate(385.5 324.0)"><g class="node-inner"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#0b1226" stroke="#60a5fa" stroke-width="1.5"/><circle cx="-28" cy="0" r="4" fill="#60a5fa"/><text x="8" y="4.5" text-anchor="middle" fill="#e8ecf6" font-size="13" font-family="Inter,Segoe UI,sans-serif" font-weight="600">MCP</text></g></g><g transform="translate(240.0 408.0)"><g class="node-inner"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#0b1226" stroke="#f472b6" stroke-width="1.5"/><circle cx="-28" cy="0" r="4" fill="#f472b6"/><text x="8" y="4.5" text-anchor="middle" fill="#e8ecf6" font-size="13" font-family="Inter,Segoe UI,sans-serif" font-weight="600">LLMs</text></g></g><g transform="translate(94.5 324.0)"><g class="node-inner"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#0b1226" stroke="#34d399" stroke-width="1.5"/><circle cx="-28" cy="0" r="4" fill="#34d399"/><text x="8" y="4.5" text-anchor="middle" fill="#e8ecf6" font-size="13" font-family="Inter,Segoe UI,sans-serif" font-weight="600">Vector DB</text></g></g><g transform="translate(94.5 156.0)"><g class="node-inner"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#0b1226" stroke="#fbbf24" stroke-width="1.5"/><circle cx="-28" cy="0" r="4" fill="#fbbf24"/><text x="8" y="4.5" text-anchor="middle" fill="#e8ecf6" font-size="13" font-family="Inter,Segoe UI,sans-serif" font-weight="600">Evals</text></g></g>
+</g>
+<g class="core-group">
+<circle class="core-pulse" cx="240" cy="240" r="62" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+<circle class="core-pulse p2" cx="240" cy="240" r="62" fill="none" stroke="#22d3ee" stroke-width="2"/>
+<circle cx="240" cy="240" r="62" fill="url(#coreFill)"/>
+<circle cx="240" cy="240" r="62" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+<g stroke="#fff" stroke-opacity=".55" stroke-width="1.2">
+<line x1="214" y1="222" x2="240" y2="212"/><line x1="214" y1="222" x2="240" y2="244"/><line x1="214" y1="258" x2="240" y2="244"/><line x1="214" y1="258" x2="240" y2="272"/>
+<line x1="240" y1="212" x2="266" y2="228"/><line x1="240" y1="244" x2="266" y2="228"/><line x1="240" y1="244" x2="266" y2="256"/><line x1="240" y1="272" x2="266" y2="256"/>
+</g>
+<g fill="#fff"><circle cx="214" cy="222" r="4.5"/><circle cx="214" cy="258" r="4.5"/><circle cx="240" cy="212" r="4.5"/><circle cx="240" cy="244" r="5.5"/><circle cx="240" cy="272" r="4.5"/><circle cx="266" cy="228" r="4.5"/><circle cx="266" cy="256" r="4.5"/></g>
+</g>
+</svg>
+</div>
+</div>
+
+</div>
+</div>
+<div class="scroll-cue" aria-hidden="true"></div>
 </section>
 
 
 <!-- ABOUT -->
 
-<section class="section container">
+<section id="about" class="section container">
 
-<h2 class="text-center mb-5">About</h2>
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">01 · Profile</span><h2>About</h2></div>
 
-<div class="glass-card">
+<div class="glass-card" data-aos="fade-up">
 
 <p>
-AI Engineer with an MSc in Artificial Intelligence and 4+ years of experience across software engineering, QA automation, and AI application development. Specialized in designing and building Agentic AI systems, Retrieval-Augmented Generation (RAG) pipelines, AI assistants, and workflow-driven applications using LangGraph, MCP, LangChain, LangSmith, FastAPI, and Google Gemini.
+Senior AI Engineer with an MSc in Artificial Intelligence and 4+ years of experience across software engineering, QA automation, and AI application development. Experienced in building Agentic AI systems, LLM-powered applications, RAG pipelines, AI assistants, and workflow automation using Python, FastAPI, LangGraph, MCP, LangChain, LangSmith, and Google Gemini. Skilled in backend engineering, hybrid retrieval, AI evaluation, observability, and production-oriented application development.
 </p><p>
-Experienced in developing production-grade AI solutions across healthcare, legal, and career intelligence domains, including multi-agent workflows, semantic retrieval systems, evaluation pipelines, and full-stack AI applications. Strong background in scalable backend architecture, AI observability, automation, and deployment of end-to-end intelligent systems.
+Currently contributing to the Unbounce landing-page builder project at Techjays, using Claude Code to support AI-assisted software development across codebase exploration, implementation planning, code generation, test generation, debugging, and code review. Interested in agentic AI-enabled SDLC workflows, reusable Claude Code skills, and plugin-based engineering automation.
 </p>
+
+<div class="stats">
+<div class="stat"><b data-count="4" data-suffix="+">4+</b><span>Years of experience</span></div>
+<div class="stat"><b data-count="8">8</b><span>AI projects</span></div>
+<div class="stat"><b data-count="12">12</b><span>Anthropic certifications</span></div>
+<div class="stat"><b data-count="3">3</b><span>Domains: health, legal, career</span></div>
+</div>
 
 <div class="text-center mt-4">
 
-<a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
-<a href="assets/cv.pdf" download class="btn btn-outline-light btn-lg">Download CV</a>
+<a href="#projects" class="btn btn-gradient btn-lg px-4">View Projects</a>
+<a href="assets/cv.pdf" download class="btn btn-outline-light btn-lg px-4">Download CV</a>
 </div>
 
 </div>
 
 </section>
 
+
 <!-- SKILLS -->
 
-<section class="section container">
+<section id="skills" class="section container">
 
-<h2 class="text-center mb-5">Skills</h2>
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">02 · Toolbox</span><h2>Skills</h2></div>
 
 <div class="skills-masonry">
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Backend & Application Development</h5>
+<h5>Backend &amp; Application Development</h5>
 <p>Python, FastAPI, Flask, REST APIs, Next.js, TypeScript, Java, JavaScript</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Agentic AI, LLMs & GenAI</h5>
-<p>Agentic AI, LangGraph, Model Context Protocol (MCP), LangChain, Google Gemini, LLMs, AI Agents, Prompt Engineering, Tool Calling, Multi-Agent Workflows, Conversational AI</p>
+<h5>Agentic AI, LLMs &amp; GenAI</h5>
+<p>Agentic AI, LangGraph, Model Context Protocol (MCP), LangChain, Google Gemini, Groq, LLMs, AI Agents, Prompt Engineering, Tool Calling, Multi-Agent Workflows, Conversational AI</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>RAG & AI Evaluation</h5>
+<h5>AI-Assisted Software Development</h5>
+<p>Claude Code, AI-assisted SDLC, Codebase Exploration, Implementation Planning, Code Generation, Test Generation, Debugging, Code Review Support, Reusable Skills and Plugin-based Workflows</p>
+</div>
+</div>
+
+<div class="skill-item" data-aos="fade-up">
+<div class="glass-card skill-card">
+<h5>RAG &amp; AI Evaluation</h5>
 <p>Retrieval-Augmented Generation (RAG), Semantic Search, Embedding Models, Vector Search, Hybrid Retrieval, BM25, Reciprocal Rank Fusion (RRF), Reranking, RAGAS, LLM-as-a-Judge, LangSmith, Automated Evaluation Pipelines, Benchmark Dataset Creation, SentenceTransformers, OCR, PDF processing</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Machine Learning & Computer Vision</h5>
+<h5>Machine Learning &amp; Computer Vision</h5>
 <p>PyTorch, TensorFlow, Scikit-learn, OpenCV, YOLO</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Cloud & DevOps</h5>
+<h5>Cloud &amp; DevOps</h5>
 <p>Google Cloud Platform (Cloud Run), Docker, Kubernetes, Git, CI/CD (Jenkins), Vercel (Next.js deployment), Render, Huggingface</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Databases & Data Processing</h5>
-<p>MySQL, SQL Server, NoSQL (basic), Supabase, Pandas, Data preprocessing</p>
+<h5>Databases &amp; Data Processing</h5>
+<p>PostgreSQL, MySQL, SQL Server, NoSQL (basic), Supabase, Pandas, Data preprocessing</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Automation & Testing</h5>
-<p>AI System Testing, Prompt Testing, Automated Evaluation Pipelines, Selenium WebDriver, Cypress, Playwright, TestNG, Postman, UFT</p>
+<h5>Automation &amp; Testing</h5>
+<p>Python, Pytest, AI System Testing, Prompt Testing, Automated Evaluation Pipelines, Selenium WebDriver, Cypress, Playwright, TestCafe, Appium, TestNG, Postman, API Testing, UI Automation, UFT</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Tools & Platforms</h5>
-<p>VS Code, Jira, Confluence, Xray, Google App Scripts, Android Studio</p>
+<h5>Tools &amp; Platforms</h5>
+<p>Claude Code, VS Code, Jira, Confluence, Xray, Google App Scripts, Android Studio</p>
 </div>
 </div>
 
 <div class="skill-item" data-aos="fade-up">
 <div class="glass-card skill-card">
-<h5>Security & AI Safety</h5>
+<h5>Security &amp; AI Safety</h5>
 <p>Hallucination Reduction Strategies (RAG validation), Privacy-aware Prompting, LLM Output Safety Filtering(Guardrails)</p>
 </div>
 </div>
@@ -155,7 +254,7 @@ Experienced in developing production-grade AI solutions across healthcare, legal
 
 <section id="projects" class="section container">
 
-<h2 class="text-center mb-5">AI Projects</h2>
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">04 · Work</span><h2>AI Projects</h2></div>
 
 <div class="row g-4">
 
@@ -195,17 +294,17 @@ Live Demo
 
 <div id="legal" class="glass-card project-card">
 
-<h4>AI Legal Assistant (Advanced RAG)</h4>
+<h4>AI Gumasthan: Virtual Lawyer (Advanced RAG)</h4>
 <span class="badge bg-warning text-dark">Ongoing</span>
-<p>Advanced legal research assistant leveraging hybrid Retrieval-Augmented Generation (RAG) with vector search and keyword retrieval. Enables intelligent legal query answering across thousands of indexed legal documents with evaluation and observability capabilities.
+<p>Legal research assistant for Indian law built using hybrid Retrieval-Augmented Generation (RAG) with vector search and BM25 keyword retrieval. Answers questions in plain language and cites the exact Act and section across the Constitution, BNS, BNSS, BSA, and 40+ central Acts, with retrieval quality measured on a held-out question set.
 </p>
 <span class="badge badge-tech">RAG</span>
 <span class="badge badge-tech">Qdrant</span>
 <span class="badge badge-tech">BM25</span>
-<span class="badge badge-tech">LangSmith</span>
 <span class="badge badge-tech">RRF</span>
+<span class="badge badge-tech">Groq</span>
+<span class="badge badge-tech">LangSmith</span>
 <span class="badge badge-tech">Next.js</span>
-<span class="badge badge-tech">Llama 3</span>
 <br><br>
 
 <a class="btn btn-outline-light btn-sm"
@@ -351,17 +450,18 @@ GitHub
 <h4>AI Personal Assistant (LangChain + RAG)</h4>
 
 <p>
-AI assistant capable of answering questions using document-aware 
-context retrieval. Built using a Retrieval-Augmented Generation (RAG) 
-pipeline with FAISS vector search and integrated with Gemini through 
-LangChain for intelligent multi-turn conversations.
+AI assistant that answers questions about my resume and profile using a
+Retrieval-Augmented Generation (RAG) pipeline with FAISS vector search and
+Groq-hosted LLMs through LangChain for multi-turn conversations. Includes
+Docker deployment and RAGAS evaluation.
 </p>
 
 <div class="mb-2">
 <span class="badge badge-tech">LangChain</span>
 <span class="badge badge-tech">RAG</span>
 <span class="badge badge-tech">FAISS</span>
-<span class="badge badge-tech">Gemini</span>
+<span class="badge badge-tech">Groq</span>
+<span class="badge badge-tech">RAGAS</span>
 <span class="badge badge-tech">Streamlit</span>
 <span class="badge badge-tech">Hugging Face</span>
 </div>
@@ -416,26 +516,40 @@ Try Demo
 
 <!-- EXPERIENCE -->
 
-<section class="section container">
+<section id="experience" class="section container">
 
-<h2 class="text-center mb-5">Experience</h2>
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">05 · Career</span><h2>Experience</h2></div>
 
 <div class="timeline">
-    <div class="timeline-item" data-aos="fade-right">
+
+<div class="timeline-item" data-aos="fade-right">
+
+<h5>Senior AI Engineer</h5>
+<p>Techjays | Client: Unbounce | Jul 2026 – Present</p>
+<li>Onboarding to the Unbounce landing-page builder product, which supports visual drag-and-drop editing and prompt-based page creation.</li>
+<li>Learning the existing product architecture, codebase conventions, feature workflows, and testing practices to deliver enhancements within an established application.</li>
+<li>Using Claude Code as part of an AI-assisted software development lifecycle for codebase exploration, implementation planning, code generation, debugging, test generation, and code review support.</li>
+<li>Developing skills in Claude Code workflows, including reusable skills and plugin-based approaches to standardize repeatable engineering tasks and improve developer productivity.</li>
+<li>Applying an agentic approach to development tasks through task decomposition, tool use, iterative implementation, verification, and human review.</li>
+<li>Collaborating through Git-based branches, pull requests, code reviews, and testing workflows.</li>
+</div>
+
+<div class="timeline-item" data-aos="fade-right">
 
 <h5>Freelance AI Engineer (AI Consulting & Product Development) </h5>
 <p>Independent – Thrissur, India | Jan 2026 – Present</p>
-<li>Designing and developing production-grade AI applications across healthcare, legal, and career intelligence domains.</li>
-<li>Building Agentic AI systems using LangGraph, MCP, LangSmith, FastAPI, and modern LLM frameworks.</li>
-<li>Developing Retrieval-Augmented Generation (RAG) applications with hybrid retrieval, vector databases, evaluation pipelines, and observability tooling.</li>
-<li>Delivering end-to-end AI solutions including architecture design, backend development, workflow orchestration, deployment, monitoring, and evaluation.</li>
+<li>Designing and developing production-grade AI applications across healthcare, legal research, and career intelligence use cases.</li>
+<li>Building agentic systems and workflow orchestration using LangGraph, MCP, FastAPI, LangChain, and modern LLM frameworks.</li>
+<li>Developing Retrieval-Augmented Generation (RAG) applications with hybrid retrieval, vector databases, query-aware routing, and retrieval optimization.</li>
+<li>Implementing evaluation and observability practices using LangSmith, RAGAS, and LLM-as-a-Judge approaches.</li>
+<li>Delivering end-to-end AI solutions including architecture design, backend development, workflow orchestration, integrations, deployment, monitoring, and evaluation.</li>
 <div class="mt-3">
 <h6>Key Projects </h6>
 
 <ul>
 <li><strong><a href="#clinic">AI-Powered Clinic Assistant</a></strong> </li>
 
-<li><strong><a href="#legal">AI Legal Assistant</a></strong> </li>
+<li><strong><a href="#legal">AI Gumasthan (Legal Assistant)</a></strong> </li>
 
 <li><strong><a href="#career">Career Intelligence Platform</a></strong> </li>
 </ul>
@@ -445,37 +559,37 @@ Try Demo
 <div class="timeline-item" data-aos="fade-right">
 
 <h5>Technical Team Leader</h5>
-<p>Planthood – London | 2024–2025</p>
-<li>	Designed and integrated AI-assisted operational workflows using LLMs and historical production data to generate automated daily status reports, management summaries, and operational insights. </li>
-<li>	Developed an Android-based operational platform integrated with Google Sheets to capture real-time task execution, issue reporting, staff activity, and workflow timelines. </li>
-<li>	Built backend automation and data-processing pipelines using Python, Django, Google Apps Script, and cloud services for dispatch records, stock tracking, quality checks, and KPI metrics. </li>
-<li>	Implemented predictive estimation and operational analytics workflows using historical task data to forecast completion timelines, detect workflow risks, and generate live performance dashboards deployed on Google Cloud Run using Docker.</li>
-<li>Coordinated cross-functional teams to optimize operational efficiency and reduce manual processes.</li>
+<p>Planthood – London, UK | May 2024 – Aug 2025</p>
+<li>Designed and integrated AI-assisted operational workflows using LLMs and historical production data to generate automated daily status reports, management summaries, and operational insights.</li>
+<li>Led production planning, task allocation, staff coordination, and dispatch workflows across kitchen operations.</li>
+<li>Developed an Android-based operational platform integrated with Google Sheets to capture real-time task execution, issue reporting, staff activity, and workflow timelines.</li>
+<li>Built backend automation and data-processing pipelines using Python, Django, Google Apps Script, and cloud services for dispatch records, stock tracking, quality checks, and KPI metrics.</li>
+<li>Implemented predictive estimation and operational analytics workflows using historical task data to forecast completion timelines, detect workflow risks, and generate live performance dashboards deployed on Google Cloud Run using Docker.</li>
+<li>Coordinated cross-functional teams to identify bottlenecks, optimize operational efficiency, and reduce manual processes.</li>
 
 </div>
 
 <div class="timeline-item" data-aos="fade-right">
 
 <h5>Programmer Analyst</h5>
-<p>Cognizant | 2021</p>
-
-<li>Contributed to testing and validation of an AI-based voice biometrics system, ensuring accuracy, functionality, and reliable user workflows. </li>
-<li>Performed API validation and backend data verification using Postman and SQL queries on cloud-hosted systems. </li>
-<li>Developed and maintained automation workflows to improve test efficiency and reduce manual validation efforts. </li>
-<li>Collaborated with developers and analysts to troubleshoot issues, validate system behavior, and support stable feature releases.</li>
-
+<p>Cognizant – Kochi, India | May 2021 – Dec 2021</p>
+<li>Contributed to testing and validation of an AI-based voice biometrics system, ensuring accuracy, functionality, and reliable user workflows.</li>
+<li>Performed API validation and backend data verification using Postman and SQL queries on cloud-hosted systems.</li>
+<li>Supported e-commerce testing, including API automation and functional/regression validation.</li>
+<li>Developed and maintained automation workflows to improve test efficiency and reduce manual validation efforts.</li>
+<li>Collaborated with developers and analysts to troubleshoot issues, verify fixes, and support stable feature releases.</li>
 
 </div>
 
 <div class="timeline-item" data-aos="fade-right">
 
 <h5>Test Engineer</h5>
-<p>Infosys | 2018–2021</p>
-
-<li>Developed and maintained automation frameworks using Selenium, UFT.</li>
+<p>Infosys Ltd. – Mysore, India | Aug 2018 – May 2021</p>
+<li>Developed and maintained automation frameworks using Selenium, UFT, including mobile testing across Android and iOS.</li>
+<li>Validated internal travel-management workflows covering itinerary planning, travel requests, and approval processes.</li>
+<li>Performed e-commerce API automation and web UI testing using TestCafe.</li>
 <li>Implemented CI/CD pipelines to automate testing and deployment workflows.</li>
-<li>Conducted end-to-end testing of e-commerce platforms including checkout flows and payment gateways.</li>
-
+<li>Conducted end-to-end, regression, and release testing of e-commerce platforms including checkout flows and payment gateways, with defect tracking and collaboration within Agile teams.</li>
 
 </div>
 
@@ -487,33 +601,33 @@ Try Demo
 
 <!-- EDUCATION -->
 
-<section class="section container">
+<section id="education" class="section container">
 
-<h2 class="text-center mb-5">Education</h2>
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">06 · Learning</span><h2>Education</h2></div>
 
 <div class="row g-4">
 
 <div class="col-md-4" data-aos="zoom-in">
-<div class="glass-card">
-
+<div class="glass-card edu-card">
+<div class="edu-ico"><i class="bi bi-mortarboard-fill"></i></div>
 <h5>MSc Artificial Intelligence</h5>
 <p>University of East London</p>
-<p>Jan 2022 – June 2023</p>
+<p>Jan 2022 – May 2023</p>
 </div>
 </div>
 
-<div class="col-md-4" data-aos="zoom-in">
-<div class="glass-card">
-
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+<div class="glass-card edu-card">
+<div class="edu-ico"><i class="bi bi-pc-display"></i></div>
 <h5>MCA</h5>
 <p>Anna University</p>
 <p>Aug 2015 – Jun 2018</p>
 </div>
 </div>
 
-<div class="col-md-4" data-aos="zoom-in">
-<div class="glass-card">
-
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+<div class="glass-card edu-card">
+<div class="edu-ico"><i class="bi bi-journal-code"></i></div>
 <h5>BCA</h5>
 <p>Christ College</p>
 <p>Aug 2011 – Aug 2014</p>
@@ -526,30 +640,49 @@ Try Demo
 
 
 
+<!-- CERTIFICATIONS -->
+
+<section id="certifications" class="section container">
+
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">07 · Credentials</span><h2>Certifications</h2></div>
+
+<div class="glass-card cert-card" data-aos="fade-up">
+<p class="cert-issuer"><i class="bi bi-patch-check-fill"></i> Anthropic · July 2026</p>
+<div class="cert-grid">
+<span class="cert"><i class="bi bi-award"></i>AI Capabilities and Limitations</span><span class="cert"><i class="bi bi-award"></i>Introduction to Subagents</span><span class="cert"><i class="bi bi-award"></i>AI Fluency Framework &amp; Foundations</span><span class="cert"><i class="bi bi-award"></i>Claude in Amazon Bedrock</span><span class="cert"><i class="bi bi-award"></i>Claude on Google Cloud</span><span class="cert"><i class="bi bi-award"></i>Introduction to Claude Cowork</span><span class="cert"><i class="bi bi-award"></i>Introduction to Model Context Protocol</span><span class="cert"><i class="bi bi-award"></i>Introduction to Agent Skills</span><span class="cert"><i class="bi bi-award"></i>Building with the Claude API</span><span class="cert"><i class="bi bi-award"></i>Claude Platform 101</span><span class="cert"><i class="bi bi-award"></i>Claude Code in Action</span><span class="cert"><i class="bi bi-award"></i>Claude Code 101</span>
+</div>
+</div>
+
+</section>
+
+
+
 <!-- CONTACT -->
 
-<section class="section container">
+<section id="contact" class="section container">
 
-<h2 class="text-center mb-5">Contact</h2>
+<div class="section-head" data-aos="fade-up"><span class="eyebrow">08 · Say hello</span><h2>Contact</h2></div>
 
-<div class="glass-card text-center">
+<div class="glass-card text-center" data-aos="fade-up">
+
+<p class="contact-cta">Have an AI project in mind? Let's build it.</p>
 
 <div class="contact-grid">
 
-<a href="mailto:sreeku1993@gmail.com">
-<i class="bi bi-envelope-fill"></i>
+<a href="mailto:sreeku1993@gmail.com" aria-label="Email">
+<i class="bi bi-envelope-fill"></i><small>Email</small>
 </a>
 
-<a href="https://linkedin.com/in/sreekumar-kallingapuram-suresh-2394b511a">
-<i class="bi bi-linkedin"></i>
+<a href="https://linkedin.com/in/sreekumar-kallingapuram-suresh-2394b511a" aria-label="LinkedIn">
+<i class="bi bi-linkedin"></i><small>LinkedIn</small>
 </a>
 
-<a href="https://github.com/sreeku1993">
-<i class="bi bi-github"></i>
+<a href="https://github.com/sreeku1993" aria-label="GitHub">
+<i class="bi bi-github"></i><small>GitHub</small>
 </a>
 
-<a href="https://huggingface.co/sreekumar93">
-<i class="bi bi-cpu"></i>
+<a href="https://huggingface.co/sreekumar93" aria-label="Hugging Face">
+<i class="bi bi-cpu"></i><small>Hugging Face</small>
 </a>
 
 </div>
@@ -570,42 +703,25 @@ Try Demo
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-AOS.init();
-</script>
-
 <!-- FLOATING CHAT BUTTON -->
 
-<div id="chat-button" onclick="toggleChat()">💬</div>
+<button id="chat-button" type="button" onclick="toggleChat()" aria-label="Open AI assistant chat" aria-expanded="false">💬</button>
 
 <div id="chat-window">
 
 <div class="chat-header">
 AI Assistant
-<span onclick="toggleChat()">✖</span>
+<span onclick="toggleChat()" role="button" aria-label="Close chat">✖</span>
 </div>
 
 <iframe
+title="AI Assistant chat"
 src="https://sreekumar93-sreebot.hf.space"
 ></iframe>
 
 </div>
 
-<script>
-
-function toggleChat(){
-
-const chat = document.getElementById("chat-window");
-
-if(chat.style.display === "none" || chat.style.display === ""){
-chat.style.display = "block";
-}else{
-chat.style.display = "none";
-}
-
-}
-
-</script>
+<script src="script.js?v=20261109"></script>
 </body>
 
 </html>
